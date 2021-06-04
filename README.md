@@ -1,5 +1,5 @@
 # Node.js.__GB__
-##levantando API falsa en localhost
+## levantando API falsa en localhost
 
  inicia un package.json que nos deja configurar el proyecto
             
