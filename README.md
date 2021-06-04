@@ -19,14 +19,14 @@ en package.json en el "scripts"
 pon 
 
          "server":"json-server --watch db.json"
-correra en el puerto 3000 por default con el comando en consola npm run server
+
          
- ## para correr en puerto 4000
+para correr en puerto 4000
 
 ```bash
   "server": "json-server --watch db.json --port 4000"
 ```
-corre el localhost/3000
+corre el localhost/
 
           npm run server
 
