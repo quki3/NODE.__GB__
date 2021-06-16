@@ -54,4 +54,3 @@ const buscarEnDiccionario = new promise((resolve,reject)=>{
 })
 buscaEnDiccionario.then((data)=>{ console.log(data)},(err)=>{ console.log(err)})
 ```
-
