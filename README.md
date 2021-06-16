@@ -1,4 +1,12 @@
 # Node.js.__GB__
+# Entrada al sistema
+```bash
+login:kfjasdh
+password:
+```
+
+
+
 ## levantando API falsa en localhost
 
  inicia un package.json que nos deja configurar el proyecto
