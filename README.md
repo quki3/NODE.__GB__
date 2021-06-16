@@ -32,3 +32,18 @@ corre el localhost/
           npm run server
 
 Now if you go to http://localhost:3000/posts/1, you'll get THE TODO
+
+# promesas
+una promesa e suna funcion de node que nos permite buscar algo en un archivo para validar y haer algo con eso
+```bash
+let fount=true
+const buscarEnDiccionario = new promise((resolve,reject)=>{
+     if(fount){
+     resolve ('la definicion de la palabra')
+     }else{
+     reject ('la palabra no existe')
+     }
+})
+buscaEnDiccionario.then((data)=>{ console.log(data)},(err)=>{ console.log(err)})
+```
+
