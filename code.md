@@ -66,4 +66,44 @@
   });
 
   ```
+  ## encapsulando y limpiando el archivo
   
+  ### index.js
+  ```bash
+   module.exports = {
+    date:function(arg,done){
+        done(Date());
+    },
+    pwd:function(arg,done){
+        done(process.cwd());
+    },
+    echo:function(arg, done){
+        done(arg.join(" "));
+    }
+}
+  ```
+  ### bash.js
+  ```bash
+   const commands = require('./commands/index');
+
+const done = function(output){
+    process.stdout.write(output);
+    process.stdout.write('\nprompt > ');
+}
+
+  // Output un prompt
+  
+  process.stdout.write('prompt > ');
+  // El evento stdin 'data' se dispara cuando el user escribe una línea
+  process.stdin.on('data', function (data) {
+    let arg = data.toString().trim().split(" "); // remueve la nueva línea y con split separator" " se da cuenta que arg son porque devuelve un array
+    let cmd = arg.shift();//elimina el primer elemento del array y lo retorna
+    //arg = ['lorem','lorem']
+    if(commands[cmd]){
+       commands[cmd](arg,done)
+    }
+    
+
+    
+  });
+  ```
