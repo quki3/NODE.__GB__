@@ -5,7 +5,14 @@ login:kfjasdh
 password:
 
 ```
-
+# * Globales
+### muesta la ruta de un archivo
+```bash
+"la ruta contenedora del archivo"
+    __dirname
+"la ruta completa"
+    __filename
+```
 
 
 ## levantando API falsa en localhost
