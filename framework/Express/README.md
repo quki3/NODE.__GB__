@@ -1,9 +1,5 @@
 # Express 
-# * Globales
-### muesta la ruta de un archivo
-```bash
-    __dirname
-```
+
 ## es un framework de node.js para crear de forma rapida y sencilla(servidores .etc)
 ### Instalacion
 ```bash
