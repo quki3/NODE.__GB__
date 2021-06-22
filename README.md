@@ -13,6 +13,8 @@ password:
     __dirname
 "la ruta completa"
     __filename
+"escribir en consola"
+    console.log
 ```
 
 
