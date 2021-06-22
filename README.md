@@ -51,15 +51,49 @@ corre el localhost/
 Now if you go to http://localhost:3000/posts/1, you'll get THE TODO
 
 # promesas
-una promesa e suna funcion de node que nos permite buscar algo en un archivo para validar y haer algo con eso
+### las promesas bienen a solucionar el tema del dificil mantenimiento en las funciones con callback al hacerce muy grandes
+### Estados de las promesas
 ```bash
-let fount=true
-const buscarEnDiccionario = new promise((resolve,reject)=>{
-     if(fount){
-     resolve ('la definicion de la palabra')
-     }else{
-     reject ('la palabra no existe')
+    fullfilled - la accion relacionada con la promesa se llevo a cabo con exito
+    rejectetd - la accion relacionada con la promesa fallo
+    pendind - Aun no se a determinado si la promesa fue fullfilled o rejected
+    setteld - ya se ha determinado si la promesa fue fullfilled o rejected
+    
+    const mensaje = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                if(true)
+                    resolve('esto se va ejecutar')
+                else
+                    reject('hubo un error')
+            },3000);
+     });
+     
+     mensaje
+            .then(msj=>{
+                        console.log(msj);
+             })
+             .catch(error=>{
+                        console.log(error);
+             })
+    
+```
+# async await
+### llamadas asincronas
+```bash
+    function mensaje(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    if(true)
+                        resolve('Esto se va a ejecutar despues de 3 segunds')
+                    else
+                        reject('hubo un error')
+                },3000);
+            })
      }
-})
-buscaEnDiccionario.then((data)=>{ console.log(data)},(err)=>{ console.log(err)})
+     async function llamadaAsync(){
+            console.log('llamada...');
+            const resultado = await mensaje();
+            return resultado;
+     }
+     llamadaAsync().then(x => console.log(x)).catch(e=> console.log(e));
 ```
