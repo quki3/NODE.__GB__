@@ -3,16 +3,15 @@
 ```bash
   const http = require('http')
 ```
-## http.createServer(function(request,response){})
+## http.createServer([options][, requestListener]) para crear un servidor en local
 ```bash
-  const handleServer = function(req,res){
-  res.writeHead(200,{'content-type': 'text/html'});
-  res.write('<h1>hola Mundo desde Node.js</h1>);
-  res.end();
-  }
-  const server = http.createServer(handleServer);
-  
-  server.listen(3000,function(){
-    console.log('server on port 3000');
-  });
+  http.createServer([options][, requestListener])
+  *  options <Object>
+  *  requestListener <Function>
+  const http = require('http');
+const server = http.createServer();
+
+server.listen(3000);
+
+console.log('servidor escuchando en el puerto 300...')
 ```
