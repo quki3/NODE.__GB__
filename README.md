@@ -1,4 +1,5 @@
 # Node.js.__GB__
+
 # Entrada al sistema
 ```bash
 login:kfjasdh
@@ -6,17 +7,24 @@ password:
 
 
 ```
+<h5>el objeto global que remplaza a window en node se llama global</h5>
 # * Globales
-### muesta la ruta de un archivo
+### ?
 ```bash
 "la ruta contenedora del archivo"
     __dirname
 "la ruta completa"
     __filename
-"escribir en consola"
-    console.log
 ```
-
+### funciones globales
+```bash
+    console.log()
+    setTimeout()
+    clearTimeout()
+    setInterval()
+    clearInterval()
+    
+```
 
 ## levantando API falsa en localhost
 
