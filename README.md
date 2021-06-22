@@ -4,6 +4,7 @@
 login:kfjasdh
 password:
 
+
 ```
 # * Globales
 ### muesta la ruta de un archivo
