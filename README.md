@@ -8,6 +8,8 @@ password:
 
 ```
 <h5>el objeto global que remplaza a window en node se llama global</h5>
+
+
 # * Globales
 ### ?
 ```bash
