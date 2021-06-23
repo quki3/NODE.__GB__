@@ -73,3 +73,11 @@ fs.readdir(path[, options], callback)
 ```bash
   fs.readFile('/etc/passwd'(el ach o path que yo quiero leer), 'utf8'(en que encoding lo tiene que leer), callback(err,data));
 ```
+# leer un archivo
+```bash 
+'fs.writeFile(file, data[, options], callback)'
+#file= <string> | <Buffer> | <URL> | <integer> filename or file descriptor en el cual se va a escribir
+#data=<string> | <Buffer> | <TypedArray> | <DataView> | <Object> los valores que se van a escribir en ese archivo
+#options <Object> | <string>
+#callback <Function> para saver si esa funcion fue exitosa o no
+```
