@@ -20,6 +20,13 @@ password:
 ```
 ### funciones globales
 ```bash
+    
+    console.time()
+    console.group()
+    console.endTime()
+    console.warn()
+    console.error()
+    console.endGroup()
     console.log()
     console.table({a:a,b:b})
     setTimeout()
