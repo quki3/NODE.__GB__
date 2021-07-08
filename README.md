@@ -21,7 +21,7 @@ password:
 ### funciones globales
 ```bash
     console.log()
-    console.table()
+    console.table({a:a,b:b})
     setTimeout()
     clearTimeout()
     setInterval()
