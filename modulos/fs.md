@@ -57,10 +57,16 @@ fs.readdir(path[, options], callback)
 <code> * el callback toma dos argumentos (err,files)</code>
 <code> * los files son los archivos que estoy queriendo conseguir</code>
 ```bash
-  fs.readdir('.',) //esto le dice a ls.readdir que busque donde estamos parados
-  fs.readdir('./', (err,files)=>{
-      if(err) console.log('error',err);
-      else console.log(''resultado',files);
+const fs = require("fs");
+
+//fs.readdir("."); //esto le dice a ls.readdir que busque donde estamos parados
+fs.readdir("./", (err, files) => {
+  if (err) {
+    console.log("error:", err);
+  } else {
+    console.log("resultado:", files);
+  }
+});
   });
  
 ```
