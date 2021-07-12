@@ -87,3 +87,8 @@ fs.readdir("./", (err, files) => {
 #options <Object> | <string>
 #callback <Function> para saver si esa funcion fue exitosa o no
 ```
+# crear un archivo y escribir en el
+```javascript
+fs.createWriteStream(path[, options])//? es parecito a write.file?
+
+```
