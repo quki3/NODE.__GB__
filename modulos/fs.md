@@ -79,6 +79,16 @@ fs.readdir("./", (err, files) => {
 ```bash
   fs.readFile('/etc/passwd'(el ach o path que yo quiero leer), 'utf8'(en que encoding lo tiene que leer), callback(err,data));
 ```
+# fs.readFileSync(path[, options])//? leer un archivo 
+```bash
+path <string> | <Buffer> | <URL> | <integer> la ruta al archivo
+options <Object> | <string>
+encoding <string> | <null> Default: null//? si le quieres pasar una encodificacion 
+flag <string> See support of file system flags. Default: 'r'.
+Returns: <string> | <Buffer>
+retorna el contenido de la ruta
+
+``
 # leer un archivo
 ```bash 
 'fs.writeFile(file, data[, options], callback)'
@@ -87,6 +97,7 @@ fs.readdir("./", (err, files) => {
 #options <Object> | <string>
 #callback <Function> para saver si esa funcion fue exitosa o no
 ```
+
 # crear un archivo y escribir en el
 ```javascript
 fs.createWriteStream(path[, options])//? es parecito a write.file?
