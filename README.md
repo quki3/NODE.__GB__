@@ -21,9 +21,9 @@ password:
 ### funciones globales
 ```bash
     
-    console.time()
+    console.time() //? corre un contador para saber que tan lento es tu codigo como parametro recibe un str
+    console.endTime() //?para finalizar el contador recibe como parametro el mismo str
     console.group()
-    console.endTime()
     console.warn()
     console.error()
     console.endGroup()
