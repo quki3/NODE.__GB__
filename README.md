@@ -41,6 +41,7 @@ password:
  inicia un package.json que nos deja configurar el proyecto
             
             npm init -y 
+            npm init --yes
 
  trae las dependencias para el server
           
