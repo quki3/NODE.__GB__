@@ -1,12 +1,12 @@
 # fs
 ### fs es un modulo que nos permite poder trabajor con modulos del sistema operativo es decir nos permite interacuar con archivos del sistema
 
-# si queremos crear un nuevo archivo 
+ si queremos crear un nuevo archivo 
 ```bash
   fs.writeFile(file, data[, options], callback)
   fs.writeFile('./nombreDeArchivo.txt','lo que quiera poner denro del archivo', callback)
 ```
-# si queremos eliminar un archivo
+ si queremos eliminar un archivo
 ```bash
  fs.unlink(path, callback)
   
@@ -20,7 +20,7 @@
     console.log('the file already deleted')
   }
 ```
-# si queremos crear una nueva carpeta
+ si queremos crear una nueva carpeta
 ```bash
   fs.mkdir(path[, options], callback)
   fs.mkdir('newFolder',callback)
@@ -34,7 +34,7 @@
     console.log('the folder already exist')
   }
 ```
-# si queremos eliminar una  carpeta
+ si queremos eliminar una  carpeta
 ```bash
   fs.rmdir(path[, options], callback)
   fs.rmdir('newFolder',callback)
@@ -48,8 +48,8 @@
     console.log('the folder already deleted')
   }
 ```
-# Si queremos leer un directorio fs.readdir(path[, options], callback)
-## de manera Asyncrona
+ Si queremos leer un directorio fs.readdir(path[, options], callback)
+ de manera Asyncrona
 ```bash
 fs.readdir(path[, options], callback)
 ```
@@ -70,16 +70,16 @@ fs.readdir("./", (err, files) => {
   });
  
 ```
-## de manera sincrona
+ de manera sincrona
 ```bash
   fs.readdirSync(path[, options])
 ```
 <code> * el path es la ruta</code>
-# si queremos leer un archivo
+si queremos leer un archivo
 ```bash
   fs.readFile('/etc/passwd'(el ach o path que yo quiero leer), 'utf8'(en que encoding lo tiene que leer), callback(err,data));
 ```
-# fs.readFileSync(path[, options])//? leer un archivo 
+fs.readFileSync(path[, options])//? leer un archivo 
 ```bash
 path <string> | <Buffer> | <URL> | <integer> la ruta al archivo
 options <Object> | <string>
@@ -98,7 +98,7 @@ retorna el contenido de la ruta
 #callback <Function> para saver si esa funcion fue exitosa o no
 ```
 
-# crear un archivo y escribir en el
+crear un archivo y escribir en el
 ```javascript
 fs.createWriteStream(path[, options])//? es parecito a write.file?
 
