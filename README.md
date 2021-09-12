@@ -19,7 +19,7 @@ password:
     __filename
 ```
 ### funciones globales
-```bash
+```javascript
     
     console.time() //? corre un contador para saber que tan lento es tu codigo como parametro recibe un str
     console.endTime() //?para finalizar el contador recibe como parametro el mismo str
@@ -74,7 +74,7 @@ Now if you go to http://localhost:3000/posts/1, you'll get THE TODO
 # promesas
 ### las promesas bienen a solucionar el tema del dificil mantenimiento en las funciones con callback al hacerce muy grandes
 ### Estados de las promesas
-```bash
+```javascript
     fullfilled - la accion relacionada con la promesa se llevo a cabo con exito
     rejectetd - la accion relacionada con la promesa fallo
     pendind - Aun no se a determinado si la promesa fue fullfilled o rejected
@@ -100,7 +100,7 @@ Now if you go to http://localhost:3000/posts/1, you'll get THE TODO
 ```
 # async await
 ### llamadas asincronas
-```bash
+```javascript
     function mensaje(){
             return new Promise((resolve,reject)=>{
                 setTimeout(()=>{
