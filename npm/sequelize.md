@@ -31,7 +31,8 @@ sequelize.authenticate()
 },/*options*/{});
  const Team = sequelize.define('Team',{//connection istance,model name
   firstName:{
-    type:DataTypes.STRING
+    type:DataTypes.STRING,
+    primaryKey:true
     },
   lastName:{
     type:DataTypes.STRING
