@@ -5,7 +5,16 @@ const {Secuelize} = require('sequelize');
 
 //conectamos a una base de datos 1 (connection URI)
 //nombredeuser y password proviene de la instalacion de postgres
-const sequelize = new Sequelize('postgres://nombredeuser:password@localhost:3000/nombredelabasededatosaconectar');
+const sequelize = new Sequelize('postgres://nombredeuser:password@localhost:3000/nombredelabasededatosaconectar',{
+                                                                                                                  //default
+                                                                                                                  logging:console.log,
+                                                                                                                  
+                                                                                                                  //muestra info adicional mas alla de la query sql
+                                                                                                                  loggig:(...msg)=>console.log(msg),
+                                                                                                                  
+                                                                                                                  //Deshabilita el logging
+                                                                                                                  logging:false,
+                                                                                                                  });
 
 //conectamos a una base de datos 2 (Parametros separados)
 const sequelize = new Sequelize('database', 'username', 'password', {
@@ -30,14 +39,22 @@ sequelize.authenticate()
   }
 },/*options*/{});
  const Team = sequelize.define('Team',{//connection istance,model name
-  firstName:{
-    type:DataTypes.STRING,
+  code:{
+    type:DataTypes.UUID,
     primaryKey:true
     },
   lastName:{
     type:DataTypes.STRING
   }
 },/*options*/{});
+
+console.log(sequelize.model);
+//ALTER - UPDATE
+//FOERCE- true:CREATE, false:DO NOT CREATE
+Player.sync({force:true});//esto solo cargara el model de player
+Player.sync({alter:true});//esto solo actualizara el model de player
+sequelize.sync({force:true})
+
 
 ```
 
