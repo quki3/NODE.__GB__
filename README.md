@@ -1,4 +1,16 @@
 # Node.js.__GB__
+# variables de entorno en linux
+```javascript
+console.log(process.env.NOMBRE_DE_LA_VARIABLE_DE_ENTORNO)
+```
+en consola linux o mac crear una variable de entorno
+```bash
+export NOMBRE_DE_LA_VARIABLE_DE_ENTORNO='nombre'
+```
+en consola windows crear una variable de entorno
+```bash
+set NOMBRE_DE_LA_VARIABLE_DE_ENTORNO='nombre'
+```
 # manejo de errores
 ```javascript
 
