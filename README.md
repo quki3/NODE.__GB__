@@ -18,7 +18,8 @@ callback >> function(err,data)
 promesas >> .catch
 async/await >> try catch
 
-var chalk = require('chalk');
+npm install chalk
+const chalk = require('chalk');
 console.log(chalk.black.bgRed.bold('throw err app.js-line7 path / url does not exist'),req.url);
 ```
 
